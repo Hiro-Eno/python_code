@@ -103,7 +103,7 @@ const glossary = [
 {target:`df.dropna()`, content:`データフレームの欠損値を含む行を削除。<br>***.***()`},
 {target:`df.fillna(value)`, content:`データフレームの欠損値を指定の値で補完。<br>***.***(0)`},
 {target:`df.groupby()`, content:`データフレームでグループ化して統計量を計算。<br>grouped_data = ***.***('column_name').mean()`},
-"{target:`df.size()`, content:`データフレーム（DataFrame）の要素の総数を取得。groupby()と組合せることで各ｸﾞﾙｰﾌﾟ内のデータ数をカウントできる。<br>df_num = pd.DataFrame(df.groupby(""ID"").***(), columns=[""num""])`},"
+{target:`df.size()`, content:`データフレーム（DataFrame）の要素の総数を取得。groupby()と組合せることで各ｸﾞﾙｰﾌﾟ内のデータ数をカウントできる。<br>df_num = pd.DataFrame(df.groupby('ID').***(), columns=['num'])`},
 {target:`df.groupby().apply()`, content:`データフレームでグループごとに関数を適用。<br>result = ***.***('group_column').***(custom_function)`},
 {target:`df.merge()`, content:`データフレームの結合。<br>merged_***.***(df1, df2, on='key_column')`},
 {target:`df.pivot_table()`, content:`データフレームのピボットテーブルを作成。<br>pivot_table = ***.***(values='value', index='index_column', columns='column_name', aggfunc=np.mean)`},
