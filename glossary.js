@@ -36,7 +36,7 @@ const glossary = [
 {target:`help()`, content:`指定されたオブジェクトやモジュールに関するヘルプ情報を表示。<br>***(str)`},
 {target:`hex()`, content:`16進数文字列を返す。<br>***(255) → '0xff'`},
 {target:`id()`, content:`与えられたオブジェクトの一意の識別子（identity）を返す。オブジェクトの識別子は、そのオブジェクトがメモリ上でどの位置に格納されているかを表す。<br>***(obj)`},
-{target:`if`, content:`条件に基づいてプログラムの特定の部分を実行するための制御構造<br>** y > 10:<br>実行1<br>elif y > 5:<br>実行2<br>else:実行3<br>三項演算子 x = 真の場合の値 *** 条件 else 偽の場合の値`},
+{target:`if`, content:`条件に基づいてプログラムの特定の部分を実行するための制御構造<br>** y > 10:<br>実行1<br>elif y > 5:<br>実行2<br>else:<br>実行3<br>三項演算子 x = 真の場合の値 *** 条件 else 偽の場合の値`},
 {target:`import`, content:`Pythonで外部のモジュールを読み込むための構文。<br>*** math `},
 {target:`input()`, content:`ユーザーに対してプロンプトを表示し、ユーザーがキーボードから入力した値を文字列として受け取る。<br>***('Enter your name: ')`},
 {target:`int()`, content:`整数を返す。<br>***(3.14) → 3`},
