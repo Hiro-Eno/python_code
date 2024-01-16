@@ -11,7 +11,7 @@ function createButtons(array) {
 
     for (const object of array) {
         const button = document.createElement("button");
-        button.innerText = object.target;
+        button.innerHTML = object.target;
         button.className = "buttonIndex";
         button.onclick = function () {
             display(object.target, object.content);
@@ -31,7 +31,7 @@ function createButtons(array) {
 function display(target, contentTarget) {
     const select = document.getElementById("select");
     const content = document.getElementById("content");
-    select.innerText = `Select:\t${target}`;
+    select.innerHTML = `Select:\t${target}`;
     content.innerHTML = `Content:\t${contentTarget}`;
     // content.innerText = `Content:\t${contentTarget}`;
 
