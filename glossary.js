@@ -125,6 +125,7 @@ const glossary = [
 {target:`df.idxmax()`, content:`各列・各行の最大値である要素の行名・列名を取得。<br>df.***() → 各列の最大値がある行名<br>df['A'].***() → 'A'列の最大値がある行名<br>df.***(axis=1) → 各行の最大値がある列名<br>df.loc['a'].***() → 'a'行の最大値がある列名`},
 {target:`df.min()`, content:`各列・各行の最小値を取得。<br>df.***() → 各列の最小値<br>df['A'].***() → 'A'列の最小値<br>df.***(axis=1) → 各行の最小値<br>df.loc['a'].***() → 'a'行の最小値`},
 {target:`df.idxmin()`, content:`各列・各行の最小値である要素の行名・列名を取得。<br>df.***() → 各列の最小値がある行名<br>df['A'].***() → 'A'列の最小値がある行名<br>df.***(axis=1) → 各行の最小値がある列名<br>df.loc['a'].***() → 'a'行の最小値がある列名`},
+{target:`df.drop()`, content:`行・列を指定して削除。<br>df.***('a') → a行を削除<br>df.***(index='a') → a行を削除<br>df.***(['a', 'b', 'c']) → a, b, c行を削除<br>df.***(index=['a', 'b', 'c']) → a, b, c行を削除<br>df.***('A', axis=1) → A列を削除<br><br>df.***(columns='A') → A列を削除<br>df.***(['A', 'B', 'C'], axis=1) → A, B, C列を削除<br>df.***(columns=['A', 'B', 'C']) → A, B, C列を削除`},
 {target:`df.isnull()`, content:`データフレームの欠損値の有無を確認。<br>df.***() → True, Falseで返す`},
 {target:`df.dropna()`, content:`データフレームの欠損値を含む行を削除。<br>df = df.***() → 1つでも欠測値を含む行を削除<br>df = df.***(axis=1) → 1つでも欠測値を含む列を削除<br>df = df.***(thresh=3) → 3個以上の欠測値を含む行を削除<br>df = df.***(subset=['column_name']) → column_nameの列で欠測値を含む行を削除`},
 {target:`df.fillna(value)`, content:`データフレームの欠損値を指定の値で置換。<br>df.***(0) → 0に置換<br>***.***(df.mean(numeric_only=True)) → 数値データは平均値で置換<br>df.fillna({'1st': 0, '2nd': 10}) → '1st'の列は0、'2nd'の列は10に置換<br>df['A'].fillna('a') → 'A'列の欠損値を'a'に置換<br>df.fillna['A'](df.fillna['B']) → 'A'列の欠損値を'B'列の値で置換`},
